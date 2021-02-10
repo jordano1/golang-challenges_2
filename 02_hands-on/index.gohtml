@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ._half{
+            width:50%;
+            float:left;
+        }
+        
+        .container{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <div class="container">
+        <div class="_half">
+            <ul>
+            {{range $key, $value := .}}
+                <li>{{$key}}: {{$value}}</li>
+            {{end}}
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
